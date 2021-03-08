@@ -1,0 +1,18 @@
+private-subnet-2b
+subnet-03289cca3bf1e14ab	 Available	vpc-017b4a6a646cd57d6 | MyVPC	19.19.0.160/27	–	27	eu-west-2b	euw2-az3	rtb-0507132cec7781dd7 | private-route	acl-0ab66ba4b23b16b78	No	No	No	-	No	641492675103
+
+public-subnet-2c
+subnet-050a87120999e1c4f	 Available	vpc-017b4a6a646cd57d6 | MyVPC	19.19.0.96/27	–	26	eu-west-2c	euw2-az1	rtb-09dc5739b6b295577 | public-route	acl-0ab66ba4b23b16b78	No	Yes	No	-	No	641492675103
+
+public-subnet-2a
+subnet-07365902547d40c6c	 Available	vpc-017b4a6a646cd57d6 | MyVPC	19.19.0.0/27	–	25	eu-west-2a	euw2-az2	rtb-09dc5739b6b295577 | public-route	acl-0ab66ba4b23b16b78	No	Yes	No	-	No	641492675103
+
+private-subnet-2a
+subnet-0b00ba03db0a7300d	 Available	vpc-017b4a6a646cd57d6 | MyVPC	19.19.0.128/27	–	27	eu-west-2a	euw2-az2	rtb-0507132cec7781dd7 | private-route	acl-0ab66ba4b23b16b78	No	No	No	-	No	641492675103
+
+private-subnet-2c
+subnet-0cef4063892b5855d	 Available	vpc-017b4a6a646cd57d6 | MyVPC	19.19.0.192/27	–	27	eu-west-2c	euw2-az1	rtb-0507132cec7781dd7 | private-route	acl-0ab66ba4b23b16b78	No	No	No	-	No	641492675103
+
+public-subnet-2b
+subnet-0e1f3538eb0bafe1a	 Available	vpc-017b4a6a646cd57d6 | MyVPC	19.19.0.32/27
+

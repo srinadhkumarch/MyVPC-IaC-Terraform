@@ -1,11 +1,6 @@
 resource "aws_route_table" "Publicroute" {
   vpc_id = aws_vpc.MyVPC.id
 
-  # route {
-  #   cidr_block       = "19.19.0.0/24"
-  #   local_gateway_id = "local"
-  # }
-
   route {
     cidr_block = "0.0.0.0/0"
     gateway_id      = aws_internet_gateway.IGW.id
@@ -18,11 +13,6 @@ resource "aws_route_table" "Publicroute" {
 
 resource "aws_route_table" "Privateroute" {
   vpc_id = aws_vpc.MyVPC.id
-
-  # route {
-  #   cidr_block       = "19.19.0.0/24"
-  #   local_gateway_id = "local"
-  # }
 
   route {
     cidr_block     = "0.0.0.0/0"
@@ -46,4 +36,9 @@ resource "aws_route_table_association" "Public" {
   route_table_id = aws_route_table.Publicroute.id
   count          = 3
   depends_on     = [aws_subnet.public_subnet]
+}
+
+resource "aws_main_route_table_association" "Main_route" {
+  vpc_id         = aws_vpc.MyVPC.id
+  route_table_id = aws_route_table.Publicroute.id
 }
